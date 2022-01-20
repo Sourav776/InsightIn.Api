@@ -43,7 +43,7 @@ namespace InsightIn.Api.Helpers
                 Subject = claimsIdentity,
                 Issuer = Issuer,
                 Audience = Audience,
-                Expires = DateTime.Now.AddMinutes(15),
+                Expires = DateTime.Now.AddDays(1),
                 SigningCredentials = signingCredentials,
 
             };
